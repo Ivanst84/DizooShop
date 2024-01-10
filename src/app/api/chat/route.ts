@@ -32,7 +32,7 @@ export async function POST(req: Request) {
 
     // Respond with the stream
     return new StreamingTextResponse(stream);
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error al procesar la solicitud:', error);
 
     if (error.code === 'insufficient_quota') {
