@@ -1,0 +1,39 @@
+.MainProducts
+  & > h3
+    text-align: center
+    font-size: 2.5rem
+    margin-bottom: 1rem
+
+  &__grid
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    gap: 1rem
+    
+    & > article
+      position: relative
+      min-height: 250px
+      overflow: hidden
+      border-radius: 8px
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+      & > img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        opacity: 0.8
+        transition: opacity 0.3s ease
+
+      &:hover > img
+        opacity: 1
+
+      & > p
+        position: absolute
+        top: 1rem
+        right: 1rem
+        z-index: 2
+        font-size: 1.2rem
+        font-weight: 700
+        max-width: 80%
+        text-align: right
+        color: #fff

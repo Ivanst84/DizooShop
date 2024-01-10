@@ -1,0 +1,15 @@
+.Hero{
+    margin:10rem;
+}
+.Hero h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: blueViolet;
+    margin-bottom: 1rem;
+}
+.Hero h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: red;
+    margin-bottom: 1rem;
+}
