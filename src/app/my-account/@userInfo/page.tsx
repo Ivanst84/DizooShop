@@ -12,4 +12,5 @@ export default async function MyAccountPage() {
       </section>
     </div>
   );
+
 }

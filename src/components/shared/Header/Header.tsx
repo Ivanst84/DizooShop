@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { validateAccessToken } from 'app/utils/auth/validateAccessToken'
 import styles from './Header.module.sass'
 import dynamic from 'next/dynamic'
+import { Logout } from "app/components/login/logout";
 
 const NoSSRShoppingCart = dynamic(() => import('../ShoppingCart'), { ssr: false })
 
@@ -28,5 +29,7 @@ export const Header = async () => {
         {customer?.firstName ? (<Link href="/my-account">Hola! {customer.firstName}</Link>) : (<Link href="/login">Login</Link>)}
         <NoSSRShoppingCart />
       </div>
+
+      <Logout/>
     </header>)
 }
